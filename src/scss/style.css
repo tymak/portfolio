@@ -1,0 +1,154 @@
+/* Global********************--******/
+*{
+    box-sizing: border-box;
+    }
+html{
+    font-size: 16px;
+
+}
+
+body{
+margin:0;
+background-color: #b0ceea;
+}
+/* header********************--******/
+header{
+    width:100;
+    background-color: #0c2550;
+   
+}
+.container{
+    display:flex;
+    }
+
+ .horni_menu{
+    justify-content: flex-end;
+    height:4rem ;
+    align-items: center;
+    width: 80%;
+    flex-wrap: no wrap;
+   
+ }
+       
+  .item{
+     color:white;
+     font-style: normal;
+     margin: 1rem 0rem;
+     border:1px solid white;
+     padding:1rem;
+     border-radius: 10% 10% 0% 0%;
+     
+     
+  
+ }
+ .item a{
+     color:white;
+     text-decoration: none;
+ }
+ .item:hover{
+   background-color:  #4a7b9c;
+   font-size:120%;
+
+ }
+ 
+/* header konec******************** */
+.uvod{
+    background-image: url(./img/puvodni.jpg);
+    height: 80vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+ 
+    overflow: hidden;
+   
+
+}
+h1 {
+    position: relative;
+    top:10vw;
+    left:20vw;
+    color:white;
+    font-size: 400%;
+    text-align: center;
+    width:60%;
+    height:60vh;
+}
+
+section {
+width:100vw;
+}
+.mezitext{
+    width:80vw;
+    color:black;
+    margin:4rem 10vw 4rem 10vw;
+    text-align: center;
+ 
+}
+/* sloupecky************************************** */
+.sloupky{
+    display:flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+
+    width:100vw;
+    
+}
+.sloupek{
+width: 20vw;
+height: 15rem;
+overflow: hidden;
+background-color: #04081d;
+color: white;
+}
+.koule{
+    position: relative;
+    top: -4vw;
+    width:8vw;
+    height:8vw ;
+    background-color: #b0ceea;
+    border-radius: 8vw;
+    margin-left:auto;
+    margin-right: auto;
+}
+.sloupek h2,.sloupek p {
+    color:white;
+    text-align: center;
+    position: relative;
+    top:-4vw;
+    margin-left:1rem;
+    margin-right: 1rem;
+    
+
+}
+/* my skills chart grid********************* */
+.mrizka{
+width:80vw;
+
+margin-left: 10vw;
+display:grid;
+grid-template-rows: repeat(4,2rem);
+
+border:2px solid black;
+}
+.rada{
+display:flex;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .horni_menu{
+        justify-content: center;
+        height:auto ;
+        align-items: center;
+        width: 100%;
+        flex-wrap:  wrap;  
+    }
+    h1{
+        font-size:200%; 
+    }
+    .sloupek h2,.sloupek p{
+        font-size:80%;
+    }
+}
